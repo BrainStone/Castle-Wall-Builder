@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Castle Wall Builder",
+        "description": "This Datapack will allow you to automatically build awesome castle walls",
+        "icon": {
+            "item": "minecraft:stone_bricks"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "global:The_BrainStone",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

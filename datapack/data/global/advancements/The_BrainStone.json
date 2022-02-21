@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "The_BrainStone",
+        "description": "Loaded datapacks created by The_BrainStone",
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Name: \"The_BrainStone\", Properties: {textures: [{Value: \"ewogICJ0aW1lc3RhbXAiIDogMTY0NTMxMzM0ODI0NiwKICAicHJvZmlsZUlkIiA6ICI3MTUwYThiMTM2NmI0NzIzYThhMTMzNDk1YjIzMzg4MyIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGVfQnJhaW5TdG9uZSIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80ZDQ2OTE1YzlhOTZiNWYyMjFlNWRlMDBjYzkzY2ZiNGVhYTA3MDY2ODM4Nzk3YjU2Mjc5NWViMGQ5ZDYxOGI1IgogICAgfQogIH0KfQ==\"}]}}}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "global:root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
