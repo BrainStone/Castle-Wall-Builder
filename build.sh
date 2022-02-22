@@ -40,7 +40,8 @@ for source_file in datapack/**; do
 	if [[ -d "$source_file" ]]; then
 		mkdir "$target_file"
 	elif [[ "$optimize" && "$source_file" =~ .*\.mcfunction$ ]]; then
-		sed -E '/^(\s*$|#)/d' "$source_file" > "$target_file"
+		# If function files suddenly become corrupted, blame the head here!
+		(cat "$source_file"; echo) | sed -E '/^(\s*$|#)/d' | head -c-1 > "$target_file"
 	elif [[ "$optimize" && "$source_file" =~ .*\.(json|mcmeta)$ ]]; then
 		jq -cj . "$source_file" > "$target_file"
 	else
