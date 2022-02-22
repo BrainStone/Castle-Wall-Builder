@@ -1,5 +1,5 @@
 # Determine parity
-function castle_wall_builder:determine_parity
+function castle_wall_builder:phase_build_walls/determine_parity
 
 # Create structure block
 execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker] at @s run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",posY:0}

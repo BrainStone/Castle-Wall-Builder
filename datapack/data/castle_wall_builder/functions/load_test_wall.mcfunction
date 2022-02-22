@@ -27,4 +27,4 @@ execute at @e[type=minecraft:marker,tag=castle_wall_builder_marker,limit=1,sort=
 execute at @e[type=minecraft:marker,tag=castle_wall_builder_marker,limit=1,sort=furthest] run summon minecraft:marker ~5 ~5 ~ {Tags:["castle_wall_builder_marker"],data:{type:"wall",rotation:0}}
 execute at @e[type=minecraft:marker,tag=castle_wall_builder_marker,limit=1,sort=furthest] run summon minecraft:marker ~5 ~ ~ {Tags:["castle_wall_builder_marker"],data:{type:"wall",rotation:0}}
 
-function castle_wall_builder:spawn_walls
+function castle_wall_builder:phase_build_walls/spawn_walls

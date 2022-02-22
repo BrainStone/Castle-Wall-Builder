@@ -4,4 +4,4 @@ scoreboard objectives add castle_wall_builder_z dummy
 scoreboard objectives add castle_wall_builder_parity dummy
 scoreboard objectives add castle_wall_builder_constants dummy
 
-scoreboard players set #two castle_wall_builder_constants 2
+scoreboard players set #2 castle_wall_builder_constants 2
