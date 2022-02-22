@@ -1,6 +1,3 @@
-# Determine parity
-function castle_wall_builder:phase_build_walls/determine_parity
-
 # Create structure block
 execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker] at @s run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",posY:0}
 # Determine structure
@@ -26,6 +23,3 @@ execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker,nbt={data:{ty
 execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker,nbt={data:{type:"tower",rotation:3}}] at @s run data merge block ~ ~ ~ {rotation:"COUNTERCLOCKWISE_90",posX:-3,posZ:3}
 # Activate structure block
 execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker] at @s run setblock ~ ~1 ~ minecraft:redstone_block
-
-# Cleanup
-function castle_wall_builder:clean_marker
