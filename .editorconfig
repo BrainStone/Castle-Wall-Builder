@@ -7,7 +7,7 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-# 4 space indentation for json and mcmeta (also JSON format) files
+# 4 space tab indentation for json and mcmeta (also JSON format) files
 [*.{json,mcmeta}]
 indent_style = tab
 indent_size = 4
@@ -15,3 +15,8 @@ indent_size = 4
 # Markdown files need
 [*.md]
 trim_trailing_whitespace = false
+
+# 4 space tab indentation for shell files
+[*.sh]
+indent_style = tab
+indent_size = 4
