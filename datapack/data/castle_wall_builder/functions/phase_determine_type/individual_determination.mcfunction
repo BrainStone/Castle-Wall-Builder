@@ -19,3 +19,9 @@ execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=c
 execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=0,castle_wall_builder_rel_y=1..5,castle_wall_builder_rel_z=5}] run data merge entity @s {data:{rotation:1}}
 execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=-5,castle_wall_builder_rel_y=1..5,castle_wall_builder_rel_z=0}] run data merge entity @s {data:{rotation:2}}
 execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=0,castle_wall_builder_rel_y=1..5,castle_wall_builder_rel_z=-5}] run data merge entity @s {data:{rotation:3}}
+
+# Determine wall rotation
+execute as @s[nbt={data:{type:"unknown"}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=5,castle_wall_builder_rel_z=0}] run data merge entity @s {data:{type:"wall",rotation:0}}
+execute as @s[nbt={data:{type:"unknown"}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=0,castle_wall_builder_rel_z=5}] run data merge entity @s {data:{type:"wall",rotation:1}}
+execute as @s[nbt={data:{type:"unknown"}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=-5,castle_wall_builder_rel_z=0}] run data merge entity @s {data:{type:"wall",rotation:0}}
+execute as @s[nbt={data:{type:"unknown"}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=0,castle_wall_builder_rel_z=-5}] run data merge entity @s {data:{type:"wall",rotation:1}}
