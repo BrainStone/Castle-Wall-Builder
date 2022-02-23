@@ -51,3 +51,4 @@ done
 
 cd build
 zip -9r "../$result_file" .
+[[ "$optimize" ]] && advzip -zpk4i1000 "../$result_file" || true
