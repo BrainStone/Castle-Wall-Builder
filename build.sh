@@ -51,4 +51,5 @@ done
 
 cd build
 zip -9r "../$result_file" .
+# shellcheck disable=SC2015 # It's intended that this command always succeeds due to set -e being active
 [[ "$optimize" ]] && advzip -zpk4i1000 "../$result_file" || true
