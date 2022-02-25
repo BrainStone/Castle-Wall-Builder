@@ -6,6 +6,7 @@ kill @e[type=minecraft:armor_stand,tag=castle_wall_builder_base_marker]
 
 function castle_wall_builder:phase_determine_type/determine_type
 function castle_wall_builder:phase_adjust_to_ground/adjust_to_ground
+function castle_wall_builder:phase_adjust_relative/adjust_relative
 function castle_wall_builder:phase_determine_step_size/determine_step_size
 function castle_wall_builder:phase_build_walls/spawn_walls
 # Cleanup
