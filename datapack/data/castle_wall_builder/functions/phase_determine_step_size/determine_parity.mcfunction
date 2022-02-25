@@ -1,7 +1,5 @@
-# Save coords in scoreboards
-execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker] store result score @s castle_wall_builder_x run data get entity @s Pos[0]
+# Save y coords in scoreboards (x and z have already been saved earlier)
 execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker] store result score @s castle_wall_builder_y run data get entity @s Pos[1]
-execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker] store result score @s castle_wall_builder_z run data get entity @s Pos[2]
 
 # Calculate parity
 execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker] run scoreboard players operation @s castle_wall_builder_parity = @s castle_wall_builder_x
