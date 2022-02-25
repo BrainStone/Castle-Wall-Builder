@@ -3,3 +3,5 @@ execute unless entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,sc
 
 # Needs adjustment still, tp 1 up
 execute at @s[type=minecraft:marker,tag=castle_wall_builder_not_adjusted_marker] run tp ~ ~1 ~
+# Update neigbors
+execute at @s[type=minecraft:marker,tag=castle_wall_builder_not_adjusted_marker] run function castle_wall_builder:phase_adjust_relative/update_lower
