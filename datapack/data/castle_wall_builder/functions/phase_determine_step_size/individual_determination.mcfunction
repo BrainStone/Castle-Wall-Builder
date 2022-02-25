@@ -1,5 +1,5 @@
 # Determine relative coordinates
-function castle_wall_builder:phase_determine_step_size/determine_rel_coords
+function castle_wall_builder:utils/determine_rel_coords
 
 # This allows us to know if it hasn't been found yet
 data merge entity @s {data:{step_size:-1,rotation:-1}}
