@@ -1,5 +1,5 @@
 # Tag entities to mark them for moving up (temporarily just towers)
-tag @e[type=minecraft:marker,tag=castle_wall_builder_marker,nbt={data:{type:"tower"}}] add castle_wall_builder_not_adjusted_marker
+tag @e[type=minecraft:marker,tag=castle_wall_builder_marker] add castle_wall_builder_not_adjusted_marker
 
 # Move them up (max of 50 adjustment steps)
 function castle_wall_builder:phase_adjust_relative/adjustment_step
