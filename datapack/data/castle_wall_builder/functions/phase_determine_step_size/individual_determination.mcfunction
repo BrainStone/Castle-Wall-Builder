@@ -10,9 +10,9 @@ execute as @s[nbt={data:{step_size:-1}}] if entity @e[type=minecraft:marker,tag=
 execute as @s[nbt={data:{step_size:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=-5..5,castle_wall_builder_rel_y=1,castle_wall_builder_rel_z=-5..5}] run data merge entity @s {data:{step_size:1}}
 execute as @s[nbt={data:{step_size:-1}}] run data merge entity @s {data:{step_size:0}}
 # Determine wall rotation
-execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=5,castle_wall_builder_rel_z=0}] run data merge entity @s {data:{rotation:0}}
-execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=0,castle_wall_builder_rel_z=5}] run data merge entity @s {data:{rotation:1}}
-execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=-5,castle_wall_builder_rel_z=0}] run data merge entity @s {data:{rotation:2}}
-execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=0,castle_wall_builder_rel_z=-5}] run data merge entity @s {data:{rotation:3}}
-# Fallback (for free standing walls)
-execute as @s[nbt={data:{rotation:-1}}] run data merge entity @s {data:{rotation:0}}
+execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=5,castle_wall_builder_rel_y=1..5,castle_wall_builder_rel_z=0}] run data merge entity @s {data:{rotation:0}}
+execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=0,castle_wall_builder_rel_y=1..5,castle_wall_builder_rel_z=5}] run data merge entity @s {data:{rotation:1}}
+execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=-5,castle_wall_builder_rel_y=1..5,castle_wall_builder_rel_z=0}] run data merge entity @s {data:{rotation:2}}
+execute as @s[nbt={data:{rotation:-1}}] if entity @e[type=minecraft:marker,tag=castle_wall_builder_marker,scores={castle_wall_builder_rel_x=0,castle_wall_builder_rel_y=1..5,castle_wall_builder_rel_z=-5}] run data merge entity @s {data:{rotation:3}}
+# Fallback (for free standing and 0 step walls)
+execute as @s[nbt={data:{rotation:-1}}] run data modify entity @s data.rotation set from entity @s data.orientation
