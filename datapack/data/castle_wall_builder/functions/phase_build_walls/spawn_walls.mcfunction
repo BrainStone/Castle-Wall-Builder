@@ -1,3 +1,5 @@
+say Phase: build_walls
+
 # Create structure block
 execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker] at @s run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",posY:0}
 # Determine structure
@@ -19,3 +21,9 @@ execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker,nbt={data:{ro
 
 # Activate structure block
 execute as @e[type=minecraft:marker,tag=castle_wall_builder_marker] at @s run setblock ~ ~1 ~ minecraft:redstone_block
+
+# Cleanup
+function castle_wall_builder:utils/clean_marker
+
+# Next phase
+function castle_wall_builder:utils/next_phase
