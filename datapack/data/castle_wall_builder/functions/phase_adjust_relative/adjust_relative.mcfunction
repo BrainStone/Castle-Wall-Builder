@@ -1,6 +1,10 @@
 say Phase: adjust_relative
 
-# Move them up
+# Perform 5 move up steps
+function castle_wall_builder:phase_adjust_relative/adjustment_step
+function castle_wall_builder:phase_adjust_relative/adjustment_step
+function castle_wall_builder:phase_adjust_relative/adjustment_step
+function castle_wall_builder:phase_adjust_relative/adjustment_step
 function castle_wall_builder:phase_adjust_relative/adjustment_step
 
 # Next phase if there's nothing to move up

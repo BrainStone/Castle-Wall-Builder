@@ -1,6 +1,10 @@
 say Phase: adjust_to_ground
 
-# Move them up
+# Perform 5 move up steps
+function castle_wall_builder:phase_adjust_to_ground/tp_up_if_not_free
+function castle_wall_builder:phase_adjust_to_ground/tp_up_if_not_free
+function castle_wall_builder:phase_adjust_to_ground/tp_up_if_not_free
+function castle_wall_builder:phase_adjust_to_ground/tp_up_if_not_free
 function castle_wall_builder:phase_adjust_to_ground/tp_up_if_not_free
 
 # Next phase if there's nothing to move up

@@ -25,4 +25,4 @@ scoreboard players set #phase_step_size castle_wall_builder_storage 6
 scoreboard players set #phase_build_walls castle_wall_builder_storage 7
 
 # Welcome message
-tellraw @a ["",{"text":"Castle Wall Builder","bold":true,"underlined":true,"color":"dark_green"},{"text":" v0.2.0","underlined":true,"color":"dark_green"},"\n",{"text":"  by ","italic":true,"color":"dark_green"},{"text":"The_BrainStone","bold":true,"color":"dark_green"},"\n",{"text":"Loaded successfully!","color":"green"}]
+tellraw @a ["",{"text":"Castle Wall Builder","bold":true,"underlined":true,"color":"dark_green"},{"text":" v0.2.3","underlined":true,"color":"dark_green"},"\n",{"text":"  by ","italic":true,"color":"dark_green"},{"text":"The_BrainStone","bold":true,"color":"dark_green"},"\n",{"text":"Loaded successfully!","color":"green"}]
