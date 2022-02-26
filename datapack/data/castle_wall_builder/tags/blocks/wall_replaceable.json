@@ -1,0 +1,22 @@
+{
+	"values": [
+		"#minecraft:flowers",
+		"#minecraft:ice",
+		"#minecraft:replaceable_plants",
+		"#minecraft:saplings",
+		"#minecraft:snow",
+		"minecraft:air",
+		"minecraft:bamboo",
+		"minecraft:bamboo_sapling",
+		"minecraft:brown_mushroom",
+		"minecraft:cactus",
+		"minecraft:cave_air",
+		"minecraft:chorus_flower",
+		"minecraft:chorus_plant",
+		"minecraft:lava",
+		"minecraft:red_mushroom",
+		"minecraft:sugar_cane",
+		"minecraft:void_air",
+		"minecraft:water"
+	]
+}
