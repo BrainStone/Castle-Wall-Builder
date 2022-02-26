@@ -15,8 +15,3 @@ execute at @s[type=minecraft:marker,tag=!castle_wall_builder_force_adjustment_ma
 
 # Remove temporary tag for both walls
 tag @s[type=minecraft:marker,tag=castle_wall_builder_force_adjustment_marker] remove castle_wall_builder_force_adjustment_marker
-
-# Needs adjustment still, tp 1 up
-tp @s[type=minecraft:marker,tag=castle_wall_builder_not_adjusted_marker] ~ ~1 ~
-# Update neigbors
-execute at @s[type=minecraft:marker,tag=castle_wall_builder_not_adjusted_marker] run function castle_wall_builder:phase_adjust_relative/update_neighbors
